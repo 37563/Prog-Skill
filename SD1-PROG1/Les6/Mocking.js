@@ -4,13 +4,13 @@ function randomCapitalize(word) {
         if (Math.random() < 0.5) {
             result += word[i].toUpperCase();
         } else {
-            result += word[i];
+            result += word[i].toLowerCase();
         }
     }
     return result;
 }
 
-
 let word = 'Ik heb erg veel honger!';
 let randomizedWord = randomCapitalize(word);
 console.log(randomizedWord);
+
